@@ -84,10 +84,12 @@ margin-bottom: 1%;
     }
 .ticker{
     display: flex;
-   font-size:500%;
+   
 }
 .ticker-item {
-    animation: ticker 3s infinite linear
+    animation: ticker 3s infinite linear;
+    font-size:600%;
+    top:50%;
 }
 
 @keyframes ticker {
@@ -144,12 +146,10 @@ margin-bottom: 1%;
        
         
     }
-.ticker{
-    
-   font-size:200%;
-}
+
 .ticker-item {
-    animation: ticker 4s infinite linear
+    animation: ticker 4s infinite linear;
+    font-size: 350%
 }
 
 @keyframes ticker {
@@ -190,7 +190,8 @@ margin-bottom: 1%;
                font-size:200%;
             }
             .ticker-item {
-                animation: ticker 5s infinite linear
+                animation: ticker 4s infinite linear;
+                font-size: 100%
             }
             
             @keyframes ticker {
