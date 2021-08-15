@@ -8,10 +8,12 @@ body{
     background-color: #E2CACA;
     margin:0;
     padding:0;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     
 }
 
+
+/* Main content styling */
 
 .pos-f-t{
     font-size: large;
@@ -34,7 +36,6 @@ margin-bottom: 1%;
 .content-container{
     margin: 9%;
     border-top: solid 1px #9d9dbe ;
-    
 }
 
 .main-content{
@@ -55,7 +56,7 @@ margin-bottom: 1%;
    position:absolute;
    font-weight: bolder;
   top:16%;
-  color:#987070;
+  color:#b38383;
   font-size: 120%;
    
    
@@ -64,12 +65,38 @@ margin-bottom: 1%;
        align-items: left;
        font-weight: bolder;
        font-size: 6em;
-
-      
     }
 
+/* About section */
+    
+.about-container{
+   margin: 10%; 
+   overflow: hidden;  
+   position: relative; 
+}
 
-@media screen and (max-width: 954px) {
+.about-title{
+        color:#9b3636;
+        font-size: 1100%;
+        position: relative;
+        left: 52%;
+        
+    }
+.ticker{
+    display: flex;
+   font-size:500%;
+}
+.ticker-item {
+    animation: ticker 3s infinite linear
+}
+
+@keyframes ticker {
+    100% { transform: translateX(-100%); }
+  }
+  
+
+/* Media Query Section */
+@media screen and (max-width: 962px) {
        .menu-container1{
         border-bottom: solid  2px #9d9dbe;
         border-radius: 60px;
@@ -110,6 +137,25 @@ margin-bottom: 1%;
         
         
      }
+
+     .about-title{
+        color:rgb(155, 54, 54);
+        font-size: 500%;
+       
+        
+    }
+.ticker{
+    
+   font-size:200%;
+}
+.ticker-item {
+    animation: ticker 4s infinite linear
+}
+
+@keyframes ticker {
+    100% { transform: translateX(-100%); }
+  }
+  
     
             @media screen and (max-width: 610px) {
             .menu-container1{
@@ -121,7 +167,7 @@ margin-bottom: 1%;
                     background-position: 50%;
                     background-repeat: no-repeat;
                     background-size: cover, contain;
-                    height: 100vh;
+                    height: 50vh;
                     opacity: 80%;
                     object-fit: contain;
                     color:rgb(102, 102, 218);
@@ -132,6 +178,26 @@ margin-bottom: 1%;
                 
                 
                 }
+
+                .about-title{
+                    color:rgb(155, 54, 54);
+                    font-size: 300%;
+                   
+                    
+                }
+            .ticker{
+                
+               font-size:200%;
+            }
+            .ticker-item {
+                animation: ticker 5s infinite linear
+            }
+            
+            @keyframes ticker {
+                100% { transform: translateX(-100%); }
+              }
+              
+                
             
     }
 }
