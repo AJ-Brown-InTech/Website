@@ -27,8 +27,7 @@ var cardData = [
     {title: "MONGODB ATLAS", description: " I USE THIS NOSQL CLOUD DATABASE FOR DATABASE MANAGEMENT WHEN CONNECTING APP SERVERS"},
     {title: "HEROKU", description: " I USE THIS TO DEPLOY AND MANAGE WEB APPLICATIONS TECHNOLOGIES TO BRING INNOVATION & STRUCTURE TO BROWSERS"},
 ]
-
-
+//Card data function that builds the html for our cards
 function getHTMLForCards(){
     return ` <div class="card" style="width: 18rem;">
     <div class="card-body">
@@ -40,3 +39,7 @@ function getHTMLForCards(){
     </div>
   </div> `
 }
+
+const eachCard = cardData.map( x => getHTMLForCards(x)).join("")
+
+myCards.innerHTML = (eachCard)
