@@ -96,19 +96,31 @@ body {
 
 /* About Cards section */
 
-.cards {
+summary.cards {
 display: grid;
-grid-template-columns: repeat(5, 1fr);
-grid-template-rows: repeat(2, 1fr);
-gap:3%;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-gap: 0%;
+position: relative;
+margin: 0%;
+padding: 0;
+
+
 }
 
 .card{
-  
+margin: 2%;
+background-color: brown;
+color: blanchedalmond;
+width:  60%;
+align-items: center;
+}
+.card-body{
+padding: 1rem;
 
 }
 /* Media Query Section 962 */
-@media screen and (max-width: 962px) {
+@media screen and (max-width: 1020px) {
   .menu-container1 {
     border-bottom: solid 2px #9d9dbe;
     border-radius: 60px;
@@ -163,6 +175,17 @@ gap:3%;
     top: 50%;
     
   }
+
+  summary.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 0%;
+    position: relative;
+    margin: 0%;
+    padding: 0;
+    
+    }
 }
 /* 620px and below */
 @media screen and (max-width: 620px) {
@@ -200,5 +223,16 @@ gap:3%;
     font-size: 130%;
     top: 50%;
   }
+
+  summary.cards {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0%;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+    }
 }
+
 
