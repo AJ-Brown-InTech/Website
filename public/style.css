@@ -110,14 +110,22 @@ padding: 0;
 
 .card{
 margin: 2%;
-background-color: brown;
-color: blanchedalmond;
+background-color: #9b3636;
+color: #e2c6c6;
 width:  60%;
 align-items: center;
 }
 .card-body{
 padding: 1rem;
-
+opacity: 200%;
+}
+.card-title{
+font-style:oblique;
+font-weight: bold;
+}
+.card-text{
+  display: inline-block;
+  padding-top: 2%;
 }
 /* Media Query Section 962 */
 @media screen and (max-width: 1020px) {
