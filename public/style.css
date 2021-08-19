@@ -93,6 +93,20 @@ body {
   }
 }
 
+
+/* About Cards section */
+
+.cards {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(2, 1fr);
+gap:3%;
+}
+
+.card{
+  
+
+}
 /* Media Query Section 962 */
 @media screen and (max-width: 962px) {
   .menu-container1 {
