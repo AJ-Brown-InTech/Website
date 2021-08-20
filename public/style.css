@@ -69,19 +69,14 @@ body {
 }
 
 .about-intro{
-  width: 125%; 
-   text-align: center;    
+  width: 100%; 
+  text-align: right; 
+  font-style: oblique;
+  font-weight: bolder;
+  font-size: x-large;
     
 }
-.about-header1, .about-header2, .about-header3{
-  font-weight: bold;
-  font-size: 900%;
-  color: #9d9dbe;
-  
-  text-shadow: 0px 1px 0px rgba(0,0,0.3,0);
 
-  
-}
 .about-title {
   color: #9b3636;
   font-size: 1100%;
@@ -219,6 +214,7 @@ font-weight: bold;
       width: 100%; 
        text-align: center; 
 }
+
 /* 620px and below */
 @media screen and (max-width: 658px) {
   .menu-container1 {
